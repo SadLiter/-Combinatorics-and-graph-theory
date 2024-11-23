@@ -21,6 +21,8 @@ root/
 ├── heapsort/                 # Алгоритм Heapsort
 │   ├── heapsort.py           # Реализация на Python
 │   ├── test_heapsort.py      # Тестирование Python-версии
+│   ├── heapsort.cpp          # Реализация на C++
+│   ├── test_heapsort.cpp     # Тестирование C++-версии
 │   └── input.txt             # Пример входных данных
 ├── ford_fulkerson/           # Алгоритм Форда-Фалкерсона
 │   ├── ford_fulkerson.py     # Реализация на Python
@@ -28,6 +30,8 @@ root/
 │   ├── test_ford_fulkerson.py# Тестирование Python-версии
 │   ├── test_ford_fulkerson.cpp # Тестирование C++-версии
 │   └── input.txt             # Пример входных данных
+├── Dockerfile                # Описание Docker-образа
+├── docker-compose.yml        # Конфигурация Docker Compose
 └── README.md                 # Описание проекта
 ```
 
@@ -123,7 +127,7 @@ python test_heapsort.py
   ```
 - **C++:**
   ```bash
-  g++ ford_fulkerson.cpp -o ford_fulkerson
+  g++ -O2 -std=c++17 ford_fulkerson.cpp -o ford_fulkerson
   ./ford_fulkerson < input.txt
   ```
 
@@ -143,13 +147,13 @@ python test_ford_fulkerson.py   # Для алгоритма Форда-Фалк�
 Тесты для C++ включают файлы `test_*.cpp`. Для запуска:
 1. Скомпилируйте тестовый файл:
    ```bash
-   g++ test_dinic.cpp -o test_dinic
+   g++ -O2 -std=c++17 test_dinic.cpp -o test_dinic
    ./test_dinic
    ```
 
 2. Аналогично для других алгоритмов:
    ```bash
-   g++ test_ford_fulkerson.cpp -o test_ford_fulkerson
+   g++ -O2 -std=c++17 test_ford_fulkerson.cpp -o test_ford_fulkerson
    ./test_ford_fulkerson
    ```
 

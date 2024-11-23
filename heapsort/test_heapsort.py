@@ -64,7 +64,7 @@ class TestHeapsort(unittest.TestCase):
 if __name__ == "__main__":
 
     # Измерение времени выполнения
-    data = [random.randint(0, 1000000) for _ in range(100000)]
+    data = [random.randint(0, 1000000) for _ in range(1000000)]
     start_time = time.time()
     heapsort(data)
     end_time = time.time()

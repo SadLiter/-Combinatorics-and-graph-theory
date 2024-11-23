@@ -16,8 +16,8 @@ WORKDIR /app
 COPY . .
 
 # Компилируем тесты для C++
-RUN g++ "Алгоритм Диницы/test_dinic.cpp" -o "Алгоритм Диницы/test_dinic"
-RUN g++ "Алгоритм Форда-Фалкерсона/test_ford_fulkerson.cpp" -o "Алгоритм Форда-Фалкерсона/test_ford_fulkerson"
+RUN g++ -O2 -std=c++17 -DTESTING dinic/test_dinic.cpp -o dinic/test_dinic
+RUN g++ -O2 -std=c++17 -DTESTING ford_fulkerson/test_ford_fulkerson.cpp -o ford_fulkerson/test_ford_fulkerson
 
 # Устанавливаем точку входа
 ENTRYPOINT ["/bin/bash"]

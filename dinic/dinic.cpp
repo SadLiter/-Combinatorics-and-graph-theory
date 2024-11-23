@@ -77,6 +77,7 @@ public:
     }
 };
 
+#ifndef TESTING // Условная компиляция для отключения main()
 int main() {
     int n, m;
     cin >> n >> m; // Чтение количества вершин и рёбер
@@ -96,3 +97,4 @@ int main() {
 
     return 0;
 }
+#endif

@@ -108,7 +108,7 @@ OK
 
 #### Компиляция и запуск:
 ```bash
-g++ ford_fulkerson.cpp -o ford_fulkerson
+g++ -O2 -std=c++17 ford_fulkerson.cpp -o ford_fulkerson
 ./ford_fulkerson < input.txt
 ```
 
@@ -125,7 +125,7 @@ g++ ford_fulkerson.cpp -o ford_fulkerson
 
 #### Компиляция и запуск тестов:
 ```bash
-g++ -DTESTING test_ford_fulkerson.cpp -o test_ford_fulkerson
+g++ -O2 -std=c++17 -DTESTING test_ford_fulkerson.cpp -o test_ford_fulkerson
 ./test_ford_fulkerson
 ```
 

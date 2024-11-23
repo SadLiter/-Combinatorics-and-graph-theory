@@ -1,0 +1,11 @@
+*.exe
+*.docx
+*.pdf
+*.tmp
+*.log
+*.exe
+.DS_Store
+__pycache__/
+*$*
+.gitignore
+.git/

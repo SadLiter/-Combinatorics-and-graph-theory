@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  algorithms:
+    build: .
+    container_name: algorithms_container
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
